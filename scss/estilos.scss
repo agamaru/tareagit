@@ -1,0 +1,129 @@
+//@import 'componentes/reset.scss';
+
+//variables
+$color_fondo: #E9E9E9;
+$color_cab_pie: #2D3E50;
+$color_menu: #C1392B;
+$c_blanco: #FFFFFF;
+$c_naranja: #E67F22;
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    background-color: $color_fondo;
+}
+
+body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+header{
+    background-color: $color_cab_pie;
+    h1{
+        display: inline-block;
+        width: 45%;
+        color: $c_blanco;
+        //background-color: aquamarine;
+        vertical-align: middle;
+        margin-left: 0.5em;
+    }
+    nav{
+        margin: 2em;
+        display: inline-block;
+        width: 45%;
+        ul{
+            background-color: $color_menu;
+            text-align: center;
+            // no hay diferencia entre ponerle el color de fondo al ul o al nav
+            // pero si se lo pongo al li queda la separacion del nodo de texto
+        }
+        li{            
+            display: inline-block;
+        }
+        a{
+            color: $c_blanco;
+            padding: 0.5em 1.5em;
+            display: block;
+            &:hover{
+                background-color: darkseagreen;
+            }
+        }
+    }
+}
+
+section{
+    background-color: $c_blanco;
+    width: 70%;
+    display: inline-block;
+    
+}
+
+article{
+    padding: 1em;
+    p:first-child{
+        border-bottom: 1px solid black;
+    }
+}
+
+aside{
+    background-color: $c_naranja;
+    width: 30%;
+    float: right;
+    nav{
+        background-color: #D25400;
+        margin: 1.5em;
+        text-align: center;
+        a{
+            color: $c_blanco;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            display: block;
+            &:hover{
+                background-color: darkseagreen;
+            }
+        }
+    }
+}
+
+
+footer{
+    clear: both;
+    background-color: $color_cab_pie;
+    text-align: right;
+    nav{
+    
+    ul{
+            background-color: $c_naranja;
+            display: inline-block;
+            margin: 1em;
+            //text-align: center;
+            // pero si se lo pongo el color de fondo al li queda la separacion del nodo de texto
+        }
+        li{            
+            display: inline-block;
+        }
+        a{
+            color: $c_blanco;
+            padding: 0.5em;
+            display: block;
+            &:hover{
+                background-color: darkseagreen;
+            }
+        }
+    }
+}
+
